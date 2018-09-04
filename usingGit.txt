@@ -8,6 +8,10 @@ Switches To And Creates A New Branch
 git checkout -b workingDir - 
 ** Should Go To Working Branch
 
+<<<<<<< HEAD
 chcxsz
 
 onely be in master
+=======
+this only be working dir  *** and NOt Master
+>>>>>>> workingDir
