@@ -1,0 +1,4 @@
+1) Great Respositor On GitHub
+2) from command line - >  git init
+2) from commmnd line - >  git remote add origin https://github.com/robertglewis/"RepoName".git
+4) from command line - >  git push -u origen master
