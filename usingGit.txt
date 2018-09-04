@@ -2,3 +2,8 @@
 2) from command line - >  git init
 2) from commmnd line - >  git remote add origin https://github.com/robertglewis/"RepoName".git
 4) from command line - >  git push -u origen master
+
+
+Switches To And Creates A New Branch
+git checkout -b workingDir - 
+** Should Go To Working Branch
