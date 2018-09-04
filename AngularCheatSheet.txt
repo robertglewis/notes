@@ -1,1 +1,3 @@
 ng serve -- open - > builds angular then opens browser
+
+ng g c -- allows you to create a component
