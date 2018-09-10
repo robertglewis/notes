@@ -6,7 +6,7 @@ https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app-xplat/addin
 
 1) Create New Application  - dotnet new mvc
 2) Run Application - dotnet run
-3) Adding Authentication To MVC App - dotnet new mvc --auth Individual
+3) Adding Authentication To MVC App - dotnet new mvc --auth Individual (Make New Directory First)
 4) Creating Controller - 
 ##################################################################################################
 
