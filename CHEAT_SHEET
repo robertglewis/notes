@@ -1,0 +1,24 @@
+##################################################################################################
+# DOTNET CORE Commands 
+##################################################################################################
+
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app-xplat/adding-model?view=aspnetcore-2.1
+
+1) Create New Application  - dotnet new mvc
+2) Run Application - dotnet run
+3) Adding Authentication To MVC App - dotnet new mvc --auth Individual
+4) Creating Controller - 
+##################################################################################################
+
+
+##################################################################################################
+# Git Commands 
+##################################################################################################
+1) Initialize Gid  - git init
+2) Add Repo - git remote add "branch" "URL"
+3) Check current branch - git branch
+4) Delete A Branch - git branch -d "branch"
+5) Switch & Create Branch - git checkout -b "branch"
+6) Switch To A Branch - git checkout "branch"
+7) Clone A Repo - git clone "URL"
+##################################################################################################
