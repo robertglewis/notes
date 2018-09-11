@@ -3,6 +3,7 @@
 ##################################################################################################
 
 https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app-xplat/adding-model?view=aspnetcore-2.1
+Scaffolding - https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app-xplat/adding-model?view=aspnetcore-2.1
 
 1) Create New Application  - dotnet new mvc
 2) Run Application - dotnet run
