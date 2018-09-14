@@ -1,0 +1,14 @@
+**Create a dotnet mvc core application with authentication **
+dotnet new mvc --auth Individual
+
+** Scaffold Controller & Views **
+    dotnet aspnet-codegenerator controller -name UsersController -m Users -dc coremvcContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries
+   1) Make sure that you have your model classes created
+   2) Make sure that you have your context class created
+
+** Set Up Migrations & Create Application database **
+  Steps
+  -----
+  1) dotnet restore
+  2) dotnet ef migrations add InitialCreate -c coremvcContext                         <<- Context name
+  3) dotnet ef database update -c coremvcContext                                      <<- Context name
