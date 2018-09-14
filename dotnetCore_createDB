@@ -1,0 +1,136 @@
+##################################################################################################
+
+# DOTNET CORE ADD Migrations & add Database To Project 
+
+##################################################################################################
+
+1) Make sure that you have your Model classes set up that make you up your database tables
+
+
+
+using System;
+
+using System.ComponentModel.DataAnnotations;
+
+
+
+namespace coremvc.Models
+
+{
+
+    public class Users
+
+    {
+
+        [Key]
+
+        public int uID { get; set; }
+
+        [Display(Name = "First Name")]
+
+        public string fname { get; set; }
+
+        [Display(Name = "Last Name")]
+
+        public string lname { get; set; }
+
+    }
+
+}
+
+
+
+
+
+2) Make sure you have a Context file set up.
+
+
+
+using Microsoft.EntityFrameworkCore;
+
+
+
+namespace coremvc.Models
+
+{
+
+    public class coremvcContext : DbContext
+
+    {
+
+        public coremvcContext (DbContextOptions<coremvcContext> options)
+
+            : base(options)
+
+        {
+
+        }
+
+
+
+        public DbSet<Users> Users { get; set; }
+
+    }
+
+}
+
+
+
+3) Make sure that you have connectionString set Up in your appsettings.Development.json file
+
+
+
+{
+
+  "ConnectionStrings":{
+
+    "database": "Data Source=robbase.db"    <--------------------- Here Specificaly
+
+  },
+
+  "Logging": {
+
+    "IncludeScopes": false,
+
+    "LogLevel": {
+
+      "Default": "Debug",
+
+      "System": "Information",
+
+      "Microsoft": "Information"
+
+    }
+
+  }
+
+}
+
+
+
+4) Make sure that your start file has a reference to the key that you have in your appsettings.Development.json file
+
+
+
+Public class Startup
+
+{
+
+  services.AddDbContext<coremvcContext>(options =>
+
+                options.UseSqlite(Configuration.GetConnectionString("database")));
+
+}
+
+
+
+4) Run the command to create migrations
+
+        dotnet ef migrations add InitialCreate -c coremvcContext
+
+ 
+
+5) Update Your database
+
+        dotnet ef database update -c coremvcContext
+ ##################################################################################################
